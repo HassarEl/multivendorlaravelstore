@@ -45,6 +45,15 @@
 <script src="{{ URL::asset('assets/admin/plugins/datatables-buttons/js/buttons.html5.min.js') }}"></script>
 <script src="{{ URL::asset('assets/admin/plugins/datatables-buttons/js/buttons.print.min.js') }}"></script>
 <script src="{{ URL::asset('assets/admin/plugins/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
+<script src="{{ URL::asset('/vendor/laravel-filemanager/js/stand-alone-button.js') }}"></script>
 
+{{-- summernote --}}
+<script src="{{ URL::asset('summernote/summernote.js') }}"></script>
 
+{{-- Alert Timoit --}}
+<script>
+  setTimeout(function(){
+    $('#alert').slideUp('');
+  }, 4000);
+</script>
 @yield('scripts')

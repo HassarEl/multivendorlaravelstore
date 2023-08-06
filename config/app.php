@@ -2,9 +2,12 @@
 
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
+Use UniSharp\LaravelFilemanager\LaravelFilemanagerServiceProvider;
+Use Intervention\Image\ImageServiceProvider;
 
 return [
 
+    'Image' => Intervention\Image\Facades\Image::class,
     /*
     |--------------------------------------------------------------------------
     | Application Name
@@ -55,7 +58,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://fljstore.loc'),
+    'url' => env('APP_URL', 'http://fljstore.loc:8000'),
 
     'asset_url' => env('ASSET_URL'),
 

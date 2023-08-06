@@ -25,6 +25,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // Admin Dashboard
 Route::group(['prefix'=>'admin/', 'middelware'=>'auth'], function(){
+
     Route::get('/', [AdminController::class, 'admin'])->name('admin');
 
     // Banner Section
